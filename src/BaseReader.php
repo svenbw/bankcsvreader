@@ -61,6 +61,11 @@ abstract class BaseReader
     return $this->transaction_reader;
   }
 
+  public function getBankCode()
+  {
+    return static::BANK_CODE;
+  }
+
   abstract protected function initializeReader();
   abstract protected function validateData();
   abstract public function createTransaction(array $record);

@@ -5,6 +5,7 @@ namespace Byteworks\BankCsvReader;
 class BNPReader extends BaseReader
 {
   private const HEADER_COUNT = 8;
+  protected const BANK_CODE = BankCodes::BNP;
 
   public static function isValidData(array $header, array $row=null): bool
   {

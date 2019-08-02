@@ -5,6 +5,7 @@ namespace Byteworks\BankCsvReader;
 class RaboReader extends BaseReader
 {
   private const HEADER_COUNT = 9;
+  protected const BANK_CODE = BankCodes::RABO;
 
   public static function isValidData(array $header, array $row=null): bool
   {

@@ -5,6 +5,7 @@ namespace Byteworks\BankCsvReader;
 class KBCReader extends BaseReader
 {
   private const HEADER_COUNT = 18;
+  protected const BANK_CODE = BankCodes::KBC;
 
   public static function isValidData(array $header, array $row=null): bool
   {
