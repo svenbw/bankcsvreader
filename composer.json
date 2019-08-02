@@ -1,0 +1,29 @@
+{
+  "name": "byteworks/bankcsvreader",
+  "description": "Reads exported csv account info for belgian banks",
+  "keywords": ["csv"],
+  "homepage": "https://github.com/",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sven Rymenants",
+      "email": "sven@byteworks.be"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "mikey179/vfsstream": "^1.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": { 
+      "Byteworks\\BankCsvReader\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
